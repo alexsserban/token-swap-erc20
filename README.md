@@ -1,15 +1,13 @@
-# Basic Sample Hardhat Project
+# ERC-20 Token Swap
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+### How to swap tokens
 
-Try running some of the following tasks:
+1. Alice has 100 tokens from AliceCoin, which is a ERC20 token.
+2. Bob has 100 tokens from BobCoin, which is also a ERC20 token.
+3. Alice and Bob wants to trade 10 AliceCoin for 20 BobCoin.
+4. Alice or Bob deploys TokenSwap
+5. Alice approves TokenSwap to withdraw 10 tokens from AliceCoin
+6. Bob approves TokenSwap to withdraw 20 tokens from BobCoin
+7. Alice or Bob calls TokenSwap.swap()
+8. Alice and Bob traded tokens successfully.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
